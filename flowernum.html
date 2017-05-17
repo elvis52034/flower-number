@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>水仙花數</title>
+    </head>
+    <body>
+        <p>三位數的水仙花數</p>
+<div id="s"></div>
+<script type="text/javascript">
+var num1 =0;
+var num2;
+
+var a;
+var b;
+var i;
+for (b=0;b<10;b++){
+for (a=0;a<10;a++){
+for (i = 0; i < 10; i++) {
+    num1=Math.pow(b,3)+Math.pow(a,3)+Math.pow(i,3);
+    num2=i+a*10+b*100;
+    if (num1==num2){
+    document.getElementById("s").innerHTML += num2+"<br>";}
+}}}
+
+</script>
+
+    </body>
+</html>
